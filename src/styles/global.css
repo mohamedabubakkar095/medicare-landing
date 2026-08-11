@@ -1,0 +1,131 @@
+:root {
+  --color-primary: #6C4CE0;
+  --color-primary-dark: #5638C4;
+  --color-primary-light: #F4EFFE;
+  --color-accent-pink: #FFE3EE;
+  --color-accent-pink-deep: #F6C6DA;
+
+  --color-bg: #FFFFFF;
+  --color-bg-soft: #FAF9FD;
+  --color-surface: #FFFFFF;
+  --color-text: #16121F;
+  --color-text-muted: #6E6A7C;
+  --color-border: #ECE9F3;
+
+  --color-footer-bg: #0D0B14;
+  --color-footer-text: #B8B4C6;
+
+  --font-display: 'Plus Jakarta Sans', 'Manrope', sans-serif;
+  --font-body: 'Manrope', 'Plus Jakarta Sans', sans-serif;
+
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 10px 40px -12px rgba(45, 30, 90, 0.14);
+  --shadow-card: 0 4px 24px -6px rgba(45, 30, 90, 0.10);
+
+  --container-width: 1200px;
+
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --color-primary: #8B72F0;
+  --color-primary-dark: #7259E0;
+  --color-primary-light: #241D3A;
+  --color-accent-pink: #2A1F30;
+  --color-accent-pink-deep: #3A2536;
+
+  --color-bg: #0F0D18;
+  --color-bg-soft: #15121F;
+  --color-surface: #1A1728;
+  --color-text: #F3F1FA;
+  --color-text-muted: #A8A3BD;
+  --color-border: #2A2638;
+
+  --color-footer-bg: #08070C;
+  --color-footer-text: #9C97AF;
+
+  --shadow-soft: 0 10px 40px -12px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 4px 24px -6px rgba(0, 0, 0, 0.4);
+
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 56px 0;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

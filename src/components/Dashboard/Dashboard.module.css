@@ -1,0 +1,134 @@
+.panel {
+  background: var(--color-bg-soft);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.panelText h3 {
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+  max-width: 420px;
+}
+
+.chartMock {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+.chartBadge {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+
+.chartSvg {
+  width: 100%;
+  height: 90px;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.serviceCard {
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.serviceIcon {
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.serviceCard h4 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.light {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+}
+
+.light .serviceIcon {
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.primary p,
+.primary h4 {
+  color: white;
+}
+
+.primary .serviceIcon {
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+.pink {
+  background: var(--color-accent-pink);
+}
+
+.pink .serviceIcon {
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.serviceBtn {
+  align-self: flex-start;
+  background: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 9px 18px;
+  border-radius: var(--radius-pill);
+  margin-top: 12px;
+  transition: transform 0.2s ease;
+}
+
+.serviceBtn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .panel {
+    grid-template-columns: 1fr;
+    padding: 32px;
+  }
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+}
