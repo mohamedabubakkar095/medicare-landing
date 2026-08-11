@@ -2,7 +2,7 @@ Medicare — Healthcare Landing Page
 
 A pixel-focused, fully responsive healthcare landing page built with React, CSS Modules, and Framer Motion — developed as a frontend assessment task.
 
-🔗 Live Demo: medicare-landing-seven.vercel.app
+🔗 Live Demo: https://medicare-landing-seven.vercel.app/
 
 Show Image Show Image Show Image Show Image
 
