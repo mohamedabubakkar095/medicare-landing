@@ -1,28 +1,48 @@
-# Medicare — Healthcare Landing Page
+medicare-landing-seven.vercel.app, save it as preview.png inside your project folder, then uncomment the image line near the top of the README (remove the <!-- --> around it).
+3
+Commit and push
+Run: git add README.md then git commit -m "Update README with live demo link" then git push
+4
+Check GitHub
+Refresh your GitHub repo page — the new README with badges and the live demo link will render automatically on the repo's main page.
 
-A pixel-focused, fully responsive recreation of the provided design reference, built with React (functional components + hooks), CSS Modules, and Framer Motion.
+Once that's up, you're ready to reply to the Indeed message with your GitHub repo URL and the Vercel link — want me to draft that submission message now?
 
-## Tech Stack
+Readme
+Document · MD 
 
-- **React 18** (functional components, hooks)
-- **Vite** for tooling/dev server
-- **CSS Modules** for scoped styling
-- **Framer Motion** for scroll-reveal and micro-interactions
-- **react-icons** for iconography
 
-## Features
 
-- Fully responsive layout (mobile, tablet, desktop breakpoints)
-- Dark / light mode toggle (persisted to `localStorage`, respects OS preference on first visit)
-- Smooth scrolling + scroll-triggered section animations
-- Hover micro-interactions on buttons and cards
-- Semantic HTML, accessible labels, and visible keyboard focus states
-- `prefers-reduced-motion` respected — animations disable for users who request it
-- Componentized, reusable structure — one folder per section, each with its own CSS module
 
-## Folder Structure
+Claude is AI and can make mistakes. Please double-check responses.
+Readme · MD
+Medicare — Healthcare Landing Page
 
-```
+A pixel-focused, fully responsive healthcare landing page built with React, CSS Modules, and Framer Motion — developed as a frontend assessment task.
+
+🔗 Live Demo: medicare-landing-seven.vercel.app
+
+Show Image Show Image Show Image Show Image
+
+📸 Preview
+<!-- Add a screenshot of your deployed site here, e.g.: --> <!-- ![Medicare landing page preview](./preview.png) -->
+✨ Features
+Fully responsive — mobile, tablet, and desktop breakpoints
+Dark / light mode toggle — persisted to localStorage, respects OS preference on first visit
+Smooth scrolling and scroll-triggered section animations (Framer Motion)
+Hover micro-interactions on buttons and cards
+Accessible — semantic HTML, labeled inputs, visible keyboard focus states
+prefers-reduced-motion respected — animations disable automatically for users who request it
+Componentized architecture — one folder per section, each with its own scoped CSS module
+🛠 Tech Stack
+Category	Choice
+Framework	React 18 (functional components + hooks)
+Build tool	Vite
+Styling	CSS Modules
+Animation	Framer Motion
+Icons	react-icons
+Deployment	Vercel
+📁 Folder Structure
 src/
 ├── components/
 │   ├── Navbar/
@@ -40,13 +60,15 @@ src/
 │   └── global.css            # design tokens (CSS variables) + resets
 ├── App.jsx
 └── main.jsx
-```
 
-Each component folder contains a `.jsx` file and a co-located `.module.css` file, so styles never leak across sections.
+Each component folder contains a .jsx file and a co-located .module.css file, so styles never leak across sections.
 
-## Getting Started
+🚀 Getting Started
+bash
+# clone the repo
+git clone https://github.com/mohamedabubakkar095/medicare-landing.git
+cd medicare-landing
 
-```bash
 # install dependencies
 npm install
 
@@ -58,33 +80,26 @@ npm run build
 
 # preview the production build locally
 npm run preview
-```
 
-The dev server runs at `http://localhost:5173` by default.
+The dev server runs at http://localhost:5173 by default.
 
-## Deployment
+☁️ Deployment
 
-### Vercel
-1. Push this repo to GitHub.
-2. Import the repo at [vercel.com/new](https://vercel.com/new).
-3. Framework preset: **Vite**. Build command: `npm run build`. Output directory: `dist`.
-4. Deploy.
+This project is deployed on Vercel.
 
-### Netlify
-1. Push this repo to GitHub.
-2. New site from Git at [app.netlify.com](https://app.netlify.com).
-3. Build command: `npm run build`. Publish directory: `dist`.
-4. Deploy.
+To deploy your own copy:
 
-## Implementation Notes
+Push the repo to GitHub.
+Import it at vercel.com/new.
+Framework preset: Vite · Build command: npm run build · Output directory: dist.
+Deploy — Vercel auto-redeploys on every push to main.
+🧩 Implementation Notes
+Theming — CSS custom properties (--color-*, --font-*, --radius-*) are defined in styles/global.css under :root and overridden under [data-theme='dark']. ThemeContext toggles a data-theme attribute on <html>, so components stay theme-agnostic — all switching happens at the CSS variable level.
+Animation — Framer Motion's whileInView drives scroll reveals, with viewport={{ once: true }} so each section animates in once rather than replaying on every scroll pass.
+Minimal dependencies — only framer-motion and react-icons were added beyond React itself.
+👤 Author
 
-- **Theming**: CSS custom properties (`--color-*`, `--font-*`, `--radius-*`) are defined in `styles/global.css` under `:root` and overridden under `[data-theme='dark']`. The `ThemeContext` toggles a `data-theme` attribute on `<html>`, so no component needs to know which theme is active — it's all handled at the CSS variable level.
-- **Animation**: Framer Motion's `whileInView` is used for scroll reveals (each section animates once, `viewport={{ once: true }}`) rather than on every scroll pass, to keep things calm rather than distracting.
-- **Images**: Placeholder photography is sourced from Unsplash for the hero and consultant avatars. Swap the `src` values in `Hero.jsx` and `Consultants.jsx` for final brand photography before shipping.
-- **No unnecessary dependencies**: only `framer-motion` and `react-icons` were added on top of React itself, per the "avoid unnecessary libraries" requirement.
+Mohamed Abubakkar
 
-## Lighthouse / Performance
-
-- Single production JS bundle, code-split by Vite automatically where applicable.
-- Fonts are loaded via `preconnect` + a single Google Fonts request.
-- Images use `object-fit: cover` inside fixed aspect-ratio containers to avoid layout shift.
+GitHub: https://github.com/mohamedabubakkar095
+LinkedIn: https://www.linkedin.com/in/mohamed-abubakkar
