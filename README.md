@@ -63,7 +63,7 @@ npm run build
 # preview the production build locally
 npm run preview
 
-The dev server runs at http://localhost:5173 by default.
+
 
 ☁️ Deployment
 
