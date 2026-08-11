@@ -1,21 +1,3 @@
-medicare-landing-seven.vercel.app, save it as preview.png inside your project folder, then uncomment the image line near the top of the README (remove the <!-- --> around it).
-3
-Commit and push
-Run: git add README.md then git commit -m "Update README with live demo link" then git push
-4
-Check GitHub
-Refresh your GitHub repo page — the new README with badges and the live demo link will render automatically on the repo's main page.
-
-Once that's up, you're ready to reply to the Indeed message with your GitHub repo URL and the Vercel link — want me to draft that submission message now?
-
-Readme
-Document · MD 
-
-
-
-
-Claude is AI and can make mistakes. Please double-check responses.
-Readme · MD
 Medicare — Healthcare Landing Page
 
 A pixel-focused, fully responsive healthcare landing page built with React, CSS Modules, and Framer Motion — developed as a frontend assessment task.
